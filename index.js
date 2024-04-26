@@ -85,7 +85,7 @@ app.post('/login', async (req, res) => {
     }
 });
 
-app.get("/",async(req,res)=>{
+app.get("/test",async(req,res)=>{
   res.send("server is working")
 })
   
