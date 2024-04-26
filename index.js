@@ -25,8 +25,6 @@ app.use(cors());
 
 app.use(cors({
   origin: 'https://emp-management-frontend-one.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
 
