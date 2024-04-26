@@ -13,19 +13,15 @@ const emp = require('./models/t_employee');
 const AWS = require("aws-sdk");
 const multer = require("multer");
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://emp-management-frontend-one.vercel.app');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  next();
-});
 
 
 app.use(cors());
 
 app.use(cors({
   origin: 'https://emp-management-frontend-one.vercel.app',
-  credentials: true
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true // Allow credentials such as cookies
 }));
 
 
