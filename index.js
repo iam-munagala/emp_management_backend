@@ -84,6 +84,10 @@ app.post('/login', async (req, res) => {
       res.status(500).json({ message: 'An error occurred during login.' });
     }
 });
+
+app.get("/",async(req,res)=>{
+  res.send("server is working")
+})
   
 app.get('/dashboard', async(req, res) => {
   // console.log(req.session.user)
