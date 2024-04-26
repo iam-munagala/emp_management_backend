@@ -14,9 +14,6 @@ const AWS = require("aws-sdk");
 const multer = require("multer");
 
 
-
-app.use(cors());
-
 app.use(cors({
   origin: 'https://emp-management-frontend-one.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
