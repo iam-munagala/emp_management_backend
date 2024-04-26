@@ -14,7 +14,7 @@ const AWS = require("aws-sdk");
 const multer = require("multer");
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://circular-kizzie-vamsimunagala.koyeb.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://emp-management-frontend-one.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
